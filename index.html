@@ -1,10 +1,390 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My GitHub Pages Site</title>
-  </head>
-  <body style="background-color:grey;">
-    <h1>Mark And Madi Swim School!</h1>
-    <p>more information</p>
-  </body>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY!</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We know design.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Anja Doe</h3>
+          <p class="w3-opacity">Art Director</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Web Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Dan Star</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Skills.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>PRICING</h3>
+  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 25</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+<style>a[href^="https://k2s.cc/pr/"],div[class^="Display_displayAd"],div[class^="ads-partner-"],AFS-AD,div[class^="AdItem-"],a[href^="https://flirtaescopa.com/"],[href^="http://advertisesimple.info/"],a[href^="http://xtgem.com/click?"],a[href^="http://ads.betfair.com/redirect.aspx?"],div[id^="advads_"],a[href^="https://chaturbate.com/in/?tour="],a[href^="https://t.hrtye.com/"],a[href^="http://findersocket.com/"],a[href^="http://www.dl-provider.com/search/"],a[href^="http://searchtabnew.com/"],div[data-native_ad],a[href^="https://go.hpyrdr.com/"],app-advertisement,[class^="AdvertisingSlot_"],a[href^="http://www.afgr2.com/"],span[data-component-type="s-ads-metrics"],a[href^="http://databass.info/"],a[href^="http://refpaano.host/"],a[href^="http://go.xtbaffiliates.com/"],a[href^="http://click.plista.com/pets"],a[href^="https://www.vfreecams.com/in/?track="],a[href^="https://iqbroker.com/"][href*="?aff="],a[href^="https://a.adtng.com/"],a[href^="https://ad13.adfarm1.adition.com/"],a[href^="https://go.xtbaffiliates.com/"],a[href^="http://pityhostngco2.xyz/"],a[href^="http://www.myfreepaysite.com/sfw.php?aid"],[href^="https://affiliate.fastcomet.com/"] > img,AD-TRIPLE-BOX,div[class^="StickyHeroAdWrapper-"],a[href^="http://360ads.go2cloud.org/"],a[href^="http://secure.cbdpure.com/aff/"],a[href^="http://bcp.crwdcntrl.net/"],a[href^="https://join.sexworld3d.com/track/"],a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"],a[href^="https://track.interactivegf.com/"],a[href^="https://trust.zone/go/r.php?RID="],a[href^="https://offerforge.net/"],a[href^="https://cagothie.net/"],a[href^="http://fusionads.net"],a[href^="http://go.247traffic.com/"],a[href^="http://ads2.williamhill.com/redirect.aspx?"],a[href^="https://agacelebir.com/"],mq-programmatic-ad,div[class^="kiwi-ad-wrapper"],a[href^="https://webroutetrk.com/"],a[href^="https://www.googleadservices.com/pagead/aclk?"],[href^="https://freecourseweb.com/"] > .sitefriend,div[id^="crt-"][style],a[href^="http://www.bitlord.me/share/"],[id^="ad_sky"],a[href^="https://betway.com/"][href*="&a="],a[href^="http://www.urmediazone.com/signup"],a[href^="https://chaturbate.com/affiliates/"],a[href^="https://gohere.pl/"],a[href^="http://ad.doubleclick.net/"],a[href^="http://reallygoodlink.extremefreegames.com/"],a[href^="http://refpa.top/"],a[href^="https://servedbyadbutler.com/"],div[class^="articleAdUnitMPU_"],[href^="https://shrugartisticelder.com"],a[href^="http://c43a3cd8f99413891.com/"],a[data-oburl^="https://paid.outbrain.com/network/redir?"],a[href^="https://secure.bstlnk.com/"],a[href^="https://www.sheetmusicplus.com/?aff_id="],a[href^="https://trackjs.com/?utm_source"],a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="],a[href^="http://vinfdv6b4j.com/"],[data-mobile-ad-id],a[href^="http://espn.zlbu.net/"],a[href^="http://liversely.net/"],a[href*=".flndmyiove.net/"],a[href^="http://z1.zedo.com/"],div[class^="block-openx-"],a[href^="https://gogoman.me/"],[href^="http://globsads.com/"],a[href^="http://www.revenuehits.com/"],a[href^="https://ndt5.net/"],div[id^="google_dfp_"],div[class^="adpubs-"],a[href^="http://banners.victor.com/processing/"],a[href^="https://go.trkclick2.com/"],a[href^="https://tracking.trackcasino.co/"],div[id^="lazyad-"],a[href^="http://reallygoodlink.freehookupaffair.com/"],a[href^="https://www.dollps.com/?track="],a[href^="http://www.friendlyquacks.com/"],[data-ad-module],a[href^="https://lead1.pl/"],a[href^="//syndication.dynsrvtbg.com/"],div[class^="Ad__container"],a[href^="http://www.gamebookers.com/cgi-bin/intro.cgi?"],a[href^="https://serve.awmdelivery.com/"],a[href^="https://tracking.avapartner.com/"],a[data-url^="http://paid.outbrain.com/network/redir?"] + .author,[href^="https://go.astutelinks.com/"],[href^="https://www.mypillow.com/"] > img,a[href^="https://traffic.bannerator.com/"],a[href^="https://www.passeura.com/"],a[href^="http://affiliate.coral.co.uk/processing/"],a[href^="https://misspkl.com/"],div[data-ad-wrapper],a[href^="https://t.aslnk.link/"],a[href^="https://www.arthrozene.com/"][href*="?tid="],a[href^="https://go.markets.com/visit/?bta="],a[href^="https://fonts.fontplace9.com/"],a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source,[href^="https://join.playboyplus.com/track/"],a[href^="https://aff-ads.stickywilds.com/"],a[href^="http://play4k.co/"],div[class^="index_displayAd_"],a[href^="https://ttf.trmobc.com/"],a[data-redirect^="this.href='http://paid.outbrain.com/network/redir?"],[href^="http://join.rodneymoore.com/"],a[href^="//go.xlviiirdr.com"],a[href*=".trust.zone"],a[href^="https://ads.trafficpoizon.com/"],a[href^="https://tracking.comfortclick.eu/"],a[href^="https://www.oboom.com/ad/"],a[href^="https://join.virtualtaboo.com/track/"],div[data-alias="300x250 Ad 1"],a[href^="http://bluehost.com/track/"],div[class^="s-dfp-"],a[href^="https://promo-bc.com/"],a[href^="https://www.rabbits.webcam/?id="],a[href^="http://freesoftwarelive.com/"],a[href^="http://cdn.adstract.com/"],a[href^="http://affiliates.pinnaclesports.com/processing/"],a[href^="https://secure.cbdpure.com/aff/"],a[href^="http://bcntrack.com/"],topadblock,a[href^="https://trk.moviesflix4k.xyz/"],a[href^="http://cam4com.go2cloud.org/aff_c?"],a[href^="https://natour.naughtyamerica.com/track/"],a[href^="https://track.trkinator.com/"],a[data-redirect^="http://paid.outbrain.com/network/redir?"],a[href^="https://a.bestcontentoperation.top/"],div[id^="banner-ad-"],a[href^="http://www.mobileandinternetadvertising.com/"],a[href^="https://mk-cdn.net/"],a[href^="https://a.bestcontentfood.top/"],a[href^="http://websitedhoome.com/"],div[class^="Ad__adContainer"],a[data-oburl^="http://paid.outbrain.com/network/redir?"],a[href^="http://ad-emea.doubleclick.net/"],a[href^="http://wxdownloadmanager.com/dl/"],a[href^="https://gamescarousel.com/"],a[href^="http://adserver.adtech.de/"],a[href^="https://maymooth-stopic.com/"],a[href^="http://pan.adraccoon.com?"],a[href^="http://adclick.g.doubleclick.net/"],a[href^="http://www.sfippa.com/"],a[href^="https://mmwebhandler.aff-online.com/"],[href^="http://trafficare.net/"],a[href^="https://go.ad2up.com/"],a[href^="https://awptjmp.com/"],a[href^="http://istri.it/?"],a[href^="http://dftrck.com/"],a[href^="https://ausoafab.net/"],a[href^="https://control.trafficfabrik.com/"],#skyscraper,div[class^="native-ad-"],div[class^="PreAd_"],div[class^="index__adWrapper"],div[class^="ResponsiveAd-"],a[href^="https://trappist-1d.com/"],a[href^="https://a.montangop.top/"],div[id^="ad-position-"],a[href^="https://galaxyroms.net/?scr="],a[href^="https://partners.fxoro.com/click.php?"],a[href^="http://go.oclaserver.com/"],app-large-ad,[data-ad-manager-id],a[href^="http://dwn.pushtraffic.net/"],div[id^="ad-gpt-"],div[id^="ad-div-"],[href*=".engine.adglare.net/"],a[href^="http://campaign.bharatmatrimony.com/cbstrack/"],a[href^="https://ads.leovegas.com/redirect.aspx?"],[href^="https://stvkr.com/"],a[href^="http://mmo123.co/"],div[data-role="sidebarAd"],div[id^="adspot-"],a[href^="http://bodelen.com/"],a[href^="http://admrotate.iplayer.org/"],a[href^="https://www.kingsoffetish.com/tour?partner_id="],a[href^="http://farm.plista.com/pets"],a[href^="https://waisheph.com/"],amp-embed[type="taboola"],div[id^="code_ads_"],a[href^="https://retiremely.com/"],a[href^="https://go.xxxjmp.com"],[href^="https://zone.gotrackier.com/"],div[class^="AdBannerWrapper-"],a[href^="http://www.liversely.net/"],a[href^="https://www.nutaku.net/signup/landing/"],a[href^="http://www.badoink.com/go.php?"],a[href^="http://spygasm.com/track?"],a[href^="http://www.cdjapan.co.jp/aff/click.cgi/"],a[href^="https://syndication.exoclick.com/"],a[href^="http://www.onclickmega.com/jump/next.php?"],a[href^="//benoopto.com/"],a[href^="https://fast-redirecting.com/"],a[href^="http://www.greenmangaming.com/?tap_a="],div[class^="adUnit_"],div[class^="awpcp-random-ads"],a[href^="https://my-movie.club/"],[href^="https://track.fiverr.com/visit/"] > img,a[href^="//srv.buysellads.com/"],a[href^="http://ads.expekt.com/affiliates/"],a[href^="https://horny-pussies.com/tds"],a[href^="http://refer.webhostingbuzz.com/"],a[href^="http://www.ragazzeinvendita.com/?rcid="],a[href^="https://vlnk.me/"],a[href^="https://dooloust.net/"],a[href^="https://go.alxbgo.com/"],[href^="https://www.reimageplus.com/"],a[href^="https://transfer.xe.com/signup/track/redirect?"],a[href^="http://adultgames.xxx/"],a[href^="http://partners.etoro.com/"],a[href^="https://porngames.adult/?SID="],a[href^="http://www.fonts.com/BannerScript/"],a[href^="//pubads.g.doubleclick.net/"],[href^="https://join3.bannedsextapes.com"],a[href^="http://www.liutilities.com/"],a[href^="http://secure.vivid.com/track/"],div[data-ad-underplayer],a[href^="https://ads.planetwin365affiliate.com/redirect.aspx?"],a[href^="http://record.betsafe.com/"],a[href^="http://www.adbrite.com/mb/commerce/purchase_form.php?"],a[href^="https://prf.hn/click/"][href*="/adref:"] > img,a[href^="http://adf.ly/?id="],a[href^="https://adclick.g.doubleclick.net/"],a[href^="https://trusted-click-host.com/"],div[id^="ad-server-"],[data-freestar-ad],a[href^="https://track.clickmoi.xyz/"],a[href^="https://incisivetrk.cvtr.io/click?"],span[id^="ezoic-pub-ad-placeholder-"],DFP-AD,a[href^="https://chaturbate.jjgirls.com/?track="],a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"],a[href^="http://webtrackerplus.com/"],div[data-native-ad],a[href^="https://bongacams2.com/track?"],a[href^="http://pokershibes.com/index.php?ref="],a[href^="http://mob1ledev1ces.com/"],a[href^="http://server.cpmstar.com/click.aspx?poolid="],a[href^="https://www.awin1.com/cread.php?awinaffid="],a[href^="https://prf.hn/click/"][href*="/camref:"] > img,a[href^="https://go.strpjmp.com/"],AMP-AD,a[href^="https://www.travelzoo.com/oascampaignclick/"],[id^="bunyad_ads_"],div[id^="js-dfp-"],a[href^="https://www.brazzersnetwork.com/landing/"],a[href^="http://www.dealcent.com/register.php?affid="],a[href^="http://www.download-provider.org/"],a[href^="http://tour.mrskin.com/"],a[href^="http://1phads.com/"],[lazy-ad="top_banner"],a[href^="https://meet-sex-here.com/?u="],a[href^="https://fakelay.com/"],a[href^="https://medleyads.com/"],[href^="http://residenceseeingstanding.com/"],a[href^="https://delivery.porn.com/"],a[href^="https://go.hpyjmp.com/"],div[class^="pane-adsense-managed-"],[href^="https://wct.link/"],div[id^="ad_position_"],div[data-ad-placeholder],a[href^="https://intenseaffiliates.com/redirect/"],a[href^="http://adtrack123.pl/"],div[class^="pane-google-admanager-"],a[href^="http://pubads.g.doubleclick.net/"],a[href^="http://affiliates.score-affiliates.com/"],span[title="Ads by Google"],a[href^="https://adhealers.com/"],a[href^="https://land.rk.com/landing/"],a[href^="http://www.my-dirty-hobby.com/?sub="],a[href^="http://betahit.click/"],a[href^="http://campaign.bharatmatrimony.com/track/"],a[href^="http://www.graboid.com/affiliates/"],div[class^="sp-adslot-"],div[jsdata*="CarouselPLA-"][data-id^="CarouselPLA-"],div[id^="dfp-slot-"],a[href^="https://go.goaserv.com/"],a[href^="http://www.flashx.tv/downloadthis"],a[href^="http://www.babylon.com/welcome/index?affID"],a[href^="http://www.streamtunerhd.com/signup?"],a[href^="https://www.bang.com/?aff="],[id^="google_ads_iframe"],a[href^="https://frameworkdeserve.com/"],a[href^="http://install.securewebsiteaccess.com/"],a[href^="http://sharesuper.info/"],a[href^="http://k2s.cc/pr/"],a[href^="https://moneynow.one/"],[href^="https://shiftnetwork.infusionsoft.com/go/"] > img,a[href^="https://clixtrac.com/"],a[href^="https://bs.serving-sys.com"],a[href^="http://n.admagnet.net/"],a[href^="https://www.pornhat.com/"][rel="nofollow"],a[href^="http://api.content.ad/"],div[data-test-id="AdBannerWrapper"],a[href^="https://ad.atdmt.com/"],a[href^="https://landing.brazzersplus.com/"],a[href^="https://scurewall.co/"],a[href^="http://www.tirerack.com/affiliates/"],a[href^="http://aff.ironsocket.com/"],a[href^="//chrif8kdstie.com/"],div[class^="BlockAdvert-"],a[href^="https://click.a-ads.com/"],div[id^="advt-"],a[href^="https://refpaexhil.top/"],a[href^="https://go.julrdr.com/"],a[href^="https://ovb.im/"],a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"],a[href^="https://uncensored.game/"],a[href^="//edgar2al2larngpoer.com/"],a[href^="http://s5prou7ulr.com/"],a[href^="http://keep2share.cc/pr/"],a-ad,div[id^="adngin-"],a[href^="https://dediseedbox.com/clients/aff.php?"],a[href^="http://casino-x.com/?partner"],div[data-dfp-id],a[href^="https://vo2.qrlsx.com/"],[class^="Ad-adContainer"],a[href^="https://www.get-express-vpn.com/offer/"],a[href^="https://see.kmisln.com/"],a[href^="https://spygasm.com/track?"],a[href^="https://ads.ad4game.com/"],a[href^="https://awecrptjmp.com/"],a[href^="https://t.mobtya.com/"],a[href^="https://traffdaq.com/"],a[href^="http://get.slickvpn.com/"],a[href^="https://farm.plista.com/pets"],a[href^="https://wantopticalfreelance.com/"],a[href^="http://bc.vc/?r="],a[href^="https://www.what-sexdating.com/"],[data-ad-width],a[href^="//voyeurhit.com/cs/"],[href^="http://join.shemale.xxx/"],a[href^="https://fertilitycommand.com/"],a[href^="https://camfapr.com/landing/click/"],display-ad-component,a[href^="https://leg.xyz/?track="],a[href^="http://bs.serving-sys.com/"],a[href^="https://www.share-online.biz/affiliate/"],[href^="https://secure.bmtmicro.com/servlets/"],a[href^="https://ad.doubleclick.net/"],a[href^="https://offers.refchamp.com/"],a[href^="https://t.grtyi.com/"],[id^="bunyad-widget-ads-"],a[href^="http://allaptair.club/"],a[href^="http://buysellads.com/"],[href^="http://join.michelle-austin.com/"],a[href^="https://click.hoolig.app/"],a[href^="https://adsrv4k.com/"],a[href*=".incontro-veloce.com/"],a[href^="//coarsewary.com/"],[href^="https://totlnkcl.com/"],a[data-redirect^="https://paid.outbrain.com/network/redir?"],iframe[src^="https://pagead2.googlesyndication.com/"],[href^="https://awbbjmp.com/"],a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img,[href^="https://www.dcpodj3k5.com/"],[href^="https://mylead.global/stl/"] > img,a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"],div[class^="BannerAd_"],a[href^="https://juicyads.in/"],a[href^="https://www.spyoff.com/"],a[href^="https://dynamicadx.com/"],FBS-AD,a[href^="https://aaucwbe.com/"],a[href^="http://www.socialsex.com/"],a[href^="http://liversely.com/"],#mainLeaderboard,a[href^="https://graizoah.com/"],div[id^="div-gpt-"],div[id^="adfox_"],a[href^="http://uploaded.net/ref/"],[href^="https://click2cvs.com/"],a[href^="http://track.afcpatrk.com/"],div[data-id-advertdfpconf],[data-role="tile-ads-module"],a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="],[data-dynamic-ads],div[data-contentexchange-widget],[lazy-ad="leftbottom_banner"],a[href^="http://secure.hostgator.com/~affiliat/"],a[href^="http://tc.tradetracker.net/"] > img,div[data-mediatype="advertising"],a[href^="https://easygamepromo.com/ef/custom_affiliate/"],guj-ad,div[data-insertion],a[href^="http://ethfw0370q.com/"],div[class^="local-feed-banner-ads"],[class*="__adspot-title-container"],a[href^="https://secure.adnxs.com/clktrb?"],a[href^="http://adserver.adreactor.com/"],div[class^="kiwiad-desktop"],a[href^="http://adsrv.keycaptcha.com"],a[href^="https://pubads.g.doubleclick.net/"],amp-ad-custom,div[class^="advertisement-desktop"],a[href^="//eurogirls.live/track?"],a[href^="https://aj1070.online/"],a[href^="https://zononi.com/"],a[href^="https://click.plista.com/pets"],a[href^="http://www.firstload.de/affiliate/"],a[href^="https://deliver.ptgncdn.com/"],div[data-subscript="Advertising"],a[href^="https://www.hotgirls4fuck.com/"],div[class^="kiwiad-popup"],a[href^="http://semi-cod.com/clicks/"],a[href^="http://amzn.to/"] > img[src^="data"],a[href^="https://adserver.adreactor.com/"],a[href^="http://look.djfiln.com/"],a[href^="http://srvpub.com/"],a[href^="https://t.adating.link/"],a[href^="http://deloplen.com/"],amp-fx-flying-carpet,a[href^="http://www.torntv-downloader.com/"],a[href^="http://www.adxpansion.com"],a[href^="http://intent.bingads.com/"],a[href^="http://engine.newsmaxfeednetwork.com/"],a[href^="http://www.seekbang.com/cs/"],a[href^="https://refpaano.host/"],[href^="https://r.kraken.com/"],a[href^="https://content.oneindia.com/www/delivery/"],a[href^="https://affcpatrk.com/"],div[id^="ad_bigbox_"],a[href^="http://elitefuckbook.com/"],[href^="http://go.cm-trk2.com/"],a[href^="http://greensmoke.com/"],a[href^="http://s9kkremkr0.com/"],app-ad,[href^="https://join.girlsoutwest.com/"],a[href^="http://www.firstclass-download.com/"],a[href^="https://secure.starsaffiliateclub.com/C.ashx?"],a[href^="https://uncensored3d.com/"],a[href^="http://affiliate.glbtracker.com/"],a[href^="https://geniusdexchange.com/"],a[href^="http://lp.ncdownloader.com/"],a[href^="http://www.freefilesdownloader.com/"],a[href^="http://hpn.houzz.com/"],a[href^="http://latestdownloads.net/download.php?"],a[href^="http://tezfiles.com/pr/"],a[href^="https://ptapjmp.com/"],a[href^="https://googleads.g.doubleclick.net/pcs/click"],a[href^="http://ad-apac.doubleclick.net/"],a[href^="http://anonymous-net.com/"],[href^="/ucdownloader.php"],div[data-mpu1],a[href^="https://landing1.brazzersnetwork.com"],[href^="http://homemoviestube.com/"],a[href^="https://squren.com/rotator/?atomid="],a[href^="http://cpaway.afftrack.com/"],a[href^="https://syndication.optimizesrv.com/"],a[href^="http://wgpartner.com/"],a[href^="http://vo2.qrlsx.com/"],a[href^="https://www.adultempire.com/"][href*="?partner_id="],[lazy-ad="lefttop_banner"],[id^="ad_slider"],a[href^="http://ads.sprintrade.com/"],[name^="google_ads_iframe"],a[href^="https://axdsz.pro/"],a[href^="http://download-performance.com/"],div[class^="adsbutt_wrapper_"],a[href^="https://go.trackitalltheway.com/"],a[href^="http://serve.williamhill.com/promoRedirect?"],a[href^="http://wct.link/"],[href^="http://join.shemalepornstar.com/"],a[href^="https://www.privateinternetaccess.com/"] > img,a[href^="https://deliver.tf2www.com/"],a[href^="http://campeeks.com/"][href*="&utm_"],a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="],a[href^="https://go.gldrdr.com/"],a[href^="http://www.securegfm.com/"],a[href^="http://traffic.tc-clicks.com/"],a[href^="https://paid.outbrain.com/network/redir?"],a[href^="http://adrunnr.com/"],[id^="div-gpt-ad"],[href^="/ucdownload.php"],a[href^="https://go.currency.com/"],[href^="https://rapidgator.net/article/premium/ref/"],a[href^="https://www.bet365.com/"][href*="affiliate="],a[href^="https://badoinkvr.com/"],a[href^="https://americafirstpolls.com/"],a[href^="https://claring-loccelkin.com/"],[href^="https://www.restoro.com/"],a[href^="http://clkmon.com/adServe/"],[href^="//mage98rquewz.com/"],a[href^="http://imads.integral-marketing.com/"],a[href^="http://rs-stripe.wsj.com/stripe/redirect"],a[href^="https://sexsimulator.game/tab/?SID="],a[href^="http://goldmoney.com/?gmrefcode="],a[href^="http://linksnappy.com/?ref="],[onclick*="content.ad/"],a[href^="http://www.pinkvisualgames.com/?revid="],a[href^="http://clicks.binarypromos.com/"],a[href^="https://windscribe.com/promo/"],div[class^="ad_border_"],a[href^="https://tm-offers.gamingadult.com/"],[href^="http://join.hardcoreshemalevideo.com/"],a[href^="http://guideways.info/"],a[href^="https://www.sugarinstant.com/?partner_id="],a[href^="http://fileboom.me/pr/"],a[href^="http://www.FriendlyDuck.com/"],a[href^="https://ads.betfair.com/redirect.aspx?"],a[href^="https://chaturbate.xyz/"],a[href^="https://www.adskeeper.co.uk/"],a[href^="https://www.financeads.net/tc.php?"],[id*="MGWrap"],div[data-google-query-id],a[href^="//porngames.adult/?SID="],[id*="ScriptRoot"],a[href^="http://hd-plugins.com/download/"],a[href^="https://pl.premium4kflix.website/"],a[href^="http://www.bluehost.com/track/"] > img,a[href^="https://creacdn.top-convert.com/"],a[href^="http://webgirlz.online/landing/"],a[href^="https://giftsale.co.uk/?utm_"],[href*=".zlinkm.com/"],a[href^="https://www.xvinlink.com/?a_fid="],a[href^="https://porntubemate.com/"],a[href^="https://www.popads.net/users/"],a[href^="https://join.virtuallust3d.com/"],[lazy-ad="leftthin_banner"],[href^="https://www.hostg.xyz/aff_c"] > img,a[href^="https://track.healthtrader.com/"],a[href^="http://googleads.g.doubleclick.net/pcs/click"],a[href^="http://go.mobisla.com/"],a[href^="//agacelebir.com/"],a[href^="https://engine.phn.doublepimp.com/"],a[href^="http://www.downloadplayer1.com/"],a[href^="https://www.mrskin.com/account/"],a[href^="https://nutrientassumptionclaims.com/"],a[href^="http://www.uniblue.com/cm/"],a[href^="https://aweptjmp.com/"],div[class^="Directory__footerAds"],a[href^="http://adlev.neodatagroup.com/"],a[href^="https://iac.ampxdirect.com/"],a[href^="http://click.payserve.com/"],a[href^="http://affiliates.thrixxx.com/"],a[href^="https://watchmygirlfriend.tv/"],a[href^="http://bestorican.com/"],a[href^="http://www.clkads.com/adServe/"],a[href^="http://https://www.get-express-vpn.com/offer/"],a[href^="https://clicks.pipaffiliates.com/"],a[href^="https://landing.brazzersnetwork.com/"],a[href*=".medgoodfood.com/"],a[href^="http://cdn3.adexprts.com/"],div[data-adunit-path],a[href^="http://czotra-32.com/"],a[href^="http://c.jumia.io/"],a[href^="https://track.afftck.com/"],a[href^="http://www.downloadthesefiles.com/"],[href^="https://www.targetingpartner.com/"],div[id^="_vdo_ads_player_ai_"],a[href^="https://go.xxxiijmp.com/"],a[href^="http://adprovider.adlure.net/"],iframe[id^="google_ads_frame"],a[href^="http://www.downloadweb.org/"],div[id^="advads-"],a[href^="http://www.idownloadplay.com/"],a[href^="https://a-ads.com/campaigns/"],a[href^="http://join3.bannedsextapes.com/track/"],a[href^="http://www.getyourguide.com/?partner_id="],a[href*=".zlink9.com/"],a[href^="https://go.cmrdr.com/"],[href^="https://t.ajrkm.link/"],a[href^="http://yads.zedo.com/"],a[href^="http://mgid.com/"],a[href^="http://www.terraclicks.com/"],hl-adsense,[data-ez-name],a[href^="https://www.oboom.com/ref/"],a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"],a[href^="http://www.friendlyduck.com/AF_"],[href^="https://affect3dnetwork.com/track/"],a[href^="https://dltags.com/"],a[href^="https://dialling-abutory.com/"],a[href^="http://www.paddypower.com/?AFF_ID="],a[href^="https://www.gambling-affiliation.com/cpc/"],a[href^="http://adtrackone.eu/"],a[href^="https://torrentsafeguard.com/?aid="],iframe[src^="http://ad.yieldmanager.com/"],a[href^="https://www.nudeidols.com/cams/"],div[id^="ads300_100-widget-"],div[id^="sticky_ad_"],div[class^="lifeOnwerAd"],a[href^="http://www.adskeeper.co.uk/"],a[href^="https://www.oneclickroot.com/?tap_a="] > img,a[href^="https://track.bruceads.com/"],a[href^="https://www.im88trk.com/"],div[id^="traffective-ad-"],a[href^="http://see.kmisln.com/"],a[href^="https://adnetwrk.com/"],a[href^="http://www.amazon.co.uk/exec/obidos/external-search?"],a[href^="https://cpmspace.com/"],a[href^="https://as.sexad.net/"],div[class^="AdSlot__container"],div[id^="adrotate_widgets-"],a[href^="http://g1.v.fwmrm.net/ad/"],a[href^="https://oackoubs.com/"],a[href^="https://go.goasrv.com/"],a[href^="https://azpresearch.club/"],a[href^="http://cdn.adsrvmedia.net/"],a[href^="https://meet-to-fuck.com/tds"],div[id^="vuukle-ad-"],a[href^="https://track.themadtrcker.com/"],a[href^="https://go.cmtaffiliates.com/"],a[href^="https://track.effiliation.com/servlet/effi.click?"] > img,a[href^="https://go.nordvpn.net/aff"] > img,div[id^="ads250_250-widget-"],a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"],[href^="https://mypillow.com/"] > img,a[href^="https://s.zlink2.com/"],div[id^="rc-widget-"],a[href^="https://affiliate.rusvpn.com/click.php?"],a[href^="https://adswick.com/"],[id^="adframe_wrap_"],a[href^="https://ismlks.com/"],div[class^="Ad__bigBox"],[data-template-type="nativead"],a[href^="https://refpasrasw.world/"],a[href^="http://adserver.adtechus.com/"],a[href^="https://www.firstload.com/affiliate/"],a[href^="http://azmobilestore.co/"],a[href^="http://www.affiliates1128.com/processing/"],a[href^="https://albionsoftwares.com/"],a[href^="http://ul.to/ref/"],[href^="https://go.4rabettraff.com/"],a[href^="https://secure.eveonline.com/ft/?aid="],a[href^="https://tracking.gitads.io/"],a[href^="http://www.xmediaserve.com/"],a[href^="http://landingpagegenius.com/"],div[class^="proadszone-"],a[href^="http://hotcandyland.com/partner/"],a[href^="https://jmp.awempire.com/"],div[class^="largeRectangleAd_"],a[href^="//postlnk.com/"],a[href^="https://awejmp.com/"],[class^="div-gpt-ad"],a[href^="http://adserving.unibet.com/"],a[href^="https://www.friendlyduck.com/AF_"],a[href^="https://queersodadults.com/"],div[class^="AdCard_"],a[href^="https://keep2share.cc/pr/"],a[href^="https://affiliates.bet-at-home.com/processing/"],a[href^="https://redsittalvetoft.pro/"],bottomadblock,a[href^="https://cpartner.bdswiss.com/"],div[data-spotim-slot],a[href^="https://www.mrskin.com/tour"],a[href^="http://www.123-reg.co.uk/affiliate2.cgi"],aside[id^="tn_ads_widget-"],display-ads,AD-SLOT,a[href^="//lambingsyddir.com/"],a[href^="https://static.fleshlight.com/images/banners/"],a[href^="http://promos.bwin.com/"],a[href^="http://syndication.exoclick.com/"],a[href^="https://go.tmrjmp.com"],a[href^="http://k2s.cc/code/"],div[class^="index_adAfterContent_"],a[href^="https://mcdlks.com/"],a[href^="https://explore.findanswersnow.net/"],a[href^="http://igromir.info/"],a[href^="https://ads-for-free.com/click.php?"],div[data-test-id="AdDisplayWrapper"],a[href^="https://intrev.co/"],a[href^="http://earandmarketing.com/"],a[href^="https://bngpt.com/"],div[id^="ezoic-pub-ad-"],div[data-before-content="advertisement"],[data-css-class="dfp-inarticle"],div[data-alias="300x250 Ad 2"],ad-desktop-sidebar,ADS-RIGHT,div[id^="proadszone-"],a[href^="https://iactrivago.ampxdirect.com/"],a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img,div[data-adservice-param-tagid="contentad"],[href^="https://istlnkcl.com/"],a[href^="https://www.chngtrack.com/"],div[data-adname],a[href^="https://bnsjb1ab1e.com/"],a[href^="https://torguard.net/aff.php"] > img,a[href^="https://clickadilla.com/"],a[href^="https://playuhd.host/"],[href^="https://go.affiliatexe.com/"],div[aria-label="Ads"],a[href^="http://www.plus500.com/?id="],a[href^="//thaudray.com/"],[onclick^="location.href='http://www.reimageplus.com"],a[href^="https://www.bebi.com"],a[href^="https://fleshlight.sjv.io/"],div[id^="zergnet-widget"],a[href^="https://www.securegfm.com/"],a[href^="http://adultfriendfinder.com/p/register.cgi?pid="],a[href^="http://www.down1oads.com/"],a[href^="//www.mgid.com/"],div[id^="ad_script_"],a[href^="http://ad.yieldmanager.com/"],a[href^="https://look.utndln.com/"],a[href^="https://go.onclasrv.com/"],[href^="http://misslinkvocation.com/"],a[href^="http://enter.anabolic.com/track/"],a[href^="http://d2.zedo.com/"],a[href^="http://www.on2url.com/app/adtrack.asp"],div[id^="div-ads-"],a[href^="https://track.wg-aff.com"],div[class^="AdEmbeded__AddWrapper"],div[class^="SponsoredAds"],a[href^="https://as.conjectwatson.com/"],a[href^="https://www.camsoda.com/enter.php?id="],a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"],a[href^="http://media.paddypower.com/redirect.aspx?"],a[href^="https://join.dreamsexworld.com/"],a[href^="http://www.sexgangsters.com/?pid="],a[href^="https://banners.livepartners.com/"],a[href^="https://track.afcpatrk.com/"],a[href^="http://static.fleshlight.com/images/banners/"],[id*="MarketGid"],a[href^="http://web.adblade.com/"],a[href^="https://meet-sexhere.com/"],a[href^="https://blackorange.go2cloud.org/"],a[href^="http://www.bet365.com/"][href*="affiliate="],[href^="https://bulletprofitsmartlink.com/"],div[class^="AdhesionAd_"],a[href^="http://www.usearchmedia.com/signup?"],a[href^="https://go.etoro.com/"] > img,[href^="https://v.investologic.co.uk/"],a[href^="http://www.pinkvisualpad.com/?revid="],a[href^="https://syndication.dynsrvtbg.com/"],div[id^="ad_rect_"],a[href^="https://myusenet.xyz/"],a[href^="https://affiliate.geekbuying.com/gkbaffiliate.php?"],a[href^="https://trf.bannerator.com/"],div[class^="index_adBeforeContent_"],iframe[src^="https://tpc.googlesyndication.com/"],div[class^="adbanner_"],a[href^="https://burpee.xyz/"],a[href^="https://tour.mrskin.com/"],a[href^="http://online.ladbrokes.com/promoRedirect?"],a[href^="https://adultfriendfinder.com/go/page/landing"],a[href^="https://pcm.bannerator.com/"],a[href^="http://clickandjoinyourgirl.com/"],a[href^="https://t.hrtyj.com/"],a[href^="https://ads.cdn.live/"],a[href^="http://chaturbate.com/affiliates/"],a[href^="https://a.bestcontentweb.top/"],a[href^="http://trk.mdrtrck.com/"],a[href^="http://www.mysuperpharm.com/"],a[href^="https://www.g4mz.com/"],a[href^="http://pwrads.net/"],a[href^="http://www.advcashpro.com/aff/"],a[href^="https://a-ads.com/?partner="],a[href^="http://onclickads.net/"],[href^="https://glersakr.com/"],a[href^="//www.pd-news.com/"],a[href^="https://track.totalav.com/"],a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"],a[href^="http://feedads.g.doubleclick.net/"],a[href^="http://t.wowtrk.com/"],[href^="/admdownload.php"],div[id^="dfp-ad-"],a[href^="http://www.hitcpm.com/"],a[href^="https://go.ebrokerserve.com/"],a[href="//rufflycouncil.com/"],a[href^="http://www.hibids10.com/"],a[href^="http://www.fbooksluts.com/"],a[href^="http://clickserv.sitescout.com/"],div[class^="ad_position_"],a[href^="http://lp.ezdownloadpro.info/"],a[href^="https://track.ultravpn.com/"],div[class^="hp-ad-rect-"],a[href^="https://trklvs.com/"],div[id^="taboola-stream-"],a[href^="https://goraps.com/"],a[href^="https://billing.purevpn.com/aff.php"] > img,a[href^="https://porndeals.com/?track="],a[href^="http://us.marketgid.com"],a[href^="http://www.mrskin.com/tour"],a[href^="http://www.linkbucks.com/referral/"],a[href^="http://paid.outbrain.com/network/redir?"],a[href^="http://eclkmpsa.com/"],a[href^="http://aflrm.com/"],a[href^="https://dianches-inchor.com/"],a[href^="http://see-work.info/"],a[href^="http://tracking.deltamediallc.com/"],a[href^="https://bluedelivery.pro/"],a[href^="http://affiliates.lifeselector.com/"],div[data-adzone],a[href^="https://fileboom.me/pr/"],div[class^="adunit_"],a[href^="http://www.myfreepaysite.com/sfw_int.php?aid"],a[href^="http://codec.codecm.com/"],a[href^="http://down1oads.com/"],a[href^="http://www.quick-torrent.com/download.html?aff"],[href^="/ucmini.php"],a[href^="https://freeadult.games/"],div[id^="ad-cid-"],a[href^="http://ffxitrack.com/"],a[href^="http://www.roboform.com/php/land.php"],a[href^="https://ad.zanox.com/ppc/"] > img,a[href^="https://tc.tradetracker.net/"] > img,a[data-url^="http://paid.outbrain.com/network/redir?"],a[href^="https://ak.hetaruwg.com/"],a[data-obtrack^="http://paid.outbrain.com/network/redir?"],a[href^="http://axdsz.pro/"],aa[href^="https://itubego.com/video-downloader/?affid="],div[id^="gtm-ad-"],a[href^="https://cams.imagetwist.com/in/?track="],a[href^="https://wittered-mainging.com/"],a[href^="http://ucam.xxx/?utm_"],a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="],a[href^="http://stateresolver.link/"],a[href^="https://bullads.net/get/"],a[href^="http://www.easydownloadnow.com/"],a[href^="https://bestcond1tions.com/"],a[href^="http://www.fpcTraffic2.com/blind/in.cgi?"],[href^="https://traffserve.com/"],[href^="http://join.trannies-fuck.com/"],a[href^="https://land.brazzersnetwork.com/landing/"],a[href^="http://galleries.securewebsiteaccess.com/"],a[href^="https://bongacams10.com/track?"],a[href^="http://www.friendlyadvertisements.com/"],a[href^="http://marketgid.com"],div[id^="yandex_ad"],aside[id^="adrotate_widgets-"],a[href^="https://gghf.mobi/"],a[href^="http://www.menaon.com/installs/"],a[href^="https://tracking.truthfinder.com/?a="],a[href^="http://www.streamate.com/exports/"],a[href^="http://go.fpmarkets.com/"],a[href^="https://m.do.co/c/"] > img,a[href^="http://finaljuyu.com/"],a[href^="http://servicegetbook.net/"],a[href^="http://c.ketads.com/"],a[href^="https://reachtrgt.com/"],[data-desktop-ad-id],a[href^="https://www.adxtro.com/"],[href^="http://www.pingperfect.com/aff.php"],a[href^="https://members.linkifier.com/public/affiliateLanding?refCode="],a[href^="http://www.wantstraffic.com/"],div[class^="Component-dfp-"],[id^="ad-wrap-"],a[href^="https://financeads.net/tc.php?"],div[id^="amzn-assoc-ad"],[data-ad-cls],a[href^="http://www.afgr3.com/"],a[href^="http://papi.mynativeplatform.com:80/pub2/"],a[href^="http://ad.au.doubleclick.net/"],div[data-adunit],a[href^="https://go.247traffic.com/"],a[href^="http://go.seomojo.com/tracking202/"],a[href^="https://chaturbate.com/in/?track="],a[href^="https://topoffers.com/"][href*="/?pid="],div[id^="ad-inserter-"],a[href^="https://www.iyalc.com/"],a[href^="http://www.coiwqe.site/"],[class*="__adv-block"],a[href^="http://go.ad2up.com/"],a[href^="http://secure.signup-page.com/"],a[href^="https://someperceptionparade.com/"],a[href^="http://wopertific.info/"],LEADERBOARD-AD,a[href^="https://mk-ads.com/"],a[href^="http://www.onwebcam.com/random?t_link="],a[href^="https://x.trafficandoffers.com/"],a[href^="https://earandmarketing.com/"],a[href^="http://cwcams.com/landing/click/"],a[href^="http://www.fleshlight.com/"],div[data-ad-targeting],div[id^="div-adtech-ad-"],a[href^="http://www.webtrackerplus.com/"],iframe[src^="http://www.adpeepshosted.com/adpeeps.php?"],a[href^="https://rev.adsession.com/"],div[data-content="Advertisement"],a[href^="https://weedzy.co.uk/"][href*="&utm_"],a[href^="http://www.gfrevenge.com/landing/"],a[href^="http://www.TwinPlan.com/AF_"],a[href^="https://track.52zxzh.com/"],a[href^="http://c.actiondesk.com/"],a[href^="http://at.atwola.com/"],a[href^="http://record.sportsbetaffiliates.com.au/"],a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source,aside[id^="advads_ad_widget-"],a[href^="https://mob1ledev1ces.com/"],a[href^="http://hyperlinksecure.com/go/"],a[href^="http://www.firstload.com/affiliate/"],a[href^="https://msecure117.com/"],a[href^="https://www.mypornstarcams.com/landing/click/"],a[href^="http://zevera.com/afi.html"],a[href^="http://track.trkvluum.com/"],a[href^="http://www.1clickdownloader.com/"],a[href^="https://awentw.com/"],a[href^="http://www.twinplan.com/AF_"],[href^="http://join.shemalesfromhell.com/"],a[href^="http://xads.zedo.com/"],a[href^="http://fsoft4down.com/"],[href^="http://join.ts-dominopresley.com/"],div[class^="backfill-taboola-home-slot-"],a[href^="https://www.clicktraceclick.com/"],a[href^="http://www.text-link-ads.com/"],[href^="https://detachedbates.com/"],[href^="https://infinitytrk.com/"],a[href^="https://go.admjmp.com/"] { display: none !important }</style></body>
 </html>
